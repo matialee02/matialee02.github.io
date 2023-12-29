@@ -2,6 +2,8 @@
 <html>
 <head>
 
+    <script src="script.js"></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat" rel="stylesheet">
@@ -10,15 +12,41 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
     <title>Matia Lee</title>
 </head>
-<body>
+<body onload="openPage('Home', this, 'red')">
 
+    <h1>Matia Lee</h1>
 
+    <button class="tablink" onclick="openPage('Home', this, 'red')">Home</button>
+    <button class="tablink" onclick="openPage('News', this, 'green')" id="defaultOpen">News</button>
+    <button class="tablink" onclick="openPage('Contact', this, 'blue')">Contact</button>
+    <button class="tablink" onclick="openPage('About', this, 'orange')">About</button>
 
+    <div id="Home" class="tabcontent">
+      <h3>Home</h3>
+      <img src="matia.png" alt="First time in Seattle!" width="400" height="auto">
+      <p>This is the home page!</p>
+    </div>
 
-        Welcome to my personal website! 
-    
+    <div id="News" class="tabcontent">
+      <h3>News</h3>
+      <p>Some news this fine day!</p> 
+    </div>
 
+    <div id="Contact" class="tabcontent">
+      <h3>Contact</h3>
+      <p>Get in touch, or swing by for a cup of coffee.</p>
+    </div>
 
+    <div id="About" class="tabcontent">
+      <h3>About</h3>
+      <p>Who we are and what we do.</p>
+    </div>
+
+    <footer>
+        <hr>
+        <p>Footer info</p>
+        <br>
+    </footer>
 
 </body>
 </html>
