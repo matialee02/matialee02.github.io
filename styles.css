@@ -33,7 +33,72 @@ body, html {
   height: 100%;
 }
 
-#Home {background-color: red;}
+#Home {background-color: grey;}
 #News {background-color: green;}
 #Contact {background-color: blue;}
 #About {background-color: orange;}
+
+.container {
+ display: grid;
+ align-items: center; 
+ grid-template-columns: 1fr 1fr 1fr;
+ column-gap: 5px;
+}
+
+img {
+  width: 75%;
+  height: auto; 
+}
+
+
+
+#HASH {
+  width: 100%;
+}
+
+#HASH div {
+  width: 49%;
+  display: inline-block;
+}
+
+#right {
+  text-align: right;
+}
+
+
+
+/* Style all font awesome icons */
+.fa {
+  padding: 20px;
+  font-size: 45px;
+  width: 25px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+
+/* Github */
+.fa-github {
+  background: #333;
+  color: white;
+}
+
+/* LinkedIn */
+.fa-linkedin {
+  background: #0077b5;
+  color: white;
+}
+
+/* Github */
+.fa-envelope {
+  background: #d44638;
+  color: white;
+}
+

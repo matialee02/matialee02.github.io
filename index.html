@@ -12,32 +12,59 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
     <title>Matia Lee</title>
 </head>
-<body onload="openPage('Home', this, 'red')">
+<body onload="openPage('Home', document.getElementById('homeButton'))">
 
-    <h1>Matia Lee</h1>
+    <div id="HASH" class="blue-msg"> <!-- change var names later -->
+      <div id="left">
+        <span id="time-HASH" class="smalltext">
+            <h1>Matia Lee</h1>
+        </span>
+      </div>
+      <div id="right">
+        <span class="ios-circle">
+        <!-- Add icon library -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <button class="tablink" onclick="openPage('Home', this, 'red')">Home</button>
-    <button class="tablink" onclick="openPage('News', this, 'green')" id="defaultOpen">News</button>
-    <button class="tablink" onclick="openPage('Contact', this, 'blue')">Contact</button>
-    <button class="tablink" onclick="openPage('About', this, 'orange')">About</button>
-
-    <div id="Home" class="tabcontent">
-      <h3>Home</h3>
-      <img src="matia.png" alt="First time in Seattle!" width="400" height="auto">
-      <p>This is the home page!</p>
+        <!-- Add font awesome icons -->
+        <a href="https://github.com/matialee02?tab=repositories" class="fa fa-github" target="_blank"></a>
+        <a href="https://www.linkedin.com/in/matia-lee-47a2381a5/" class="fa fa-linkedin" target="_blank"></a>
+        <a href=mailto:matialee02@gmail.com class="fa fa-envelope" target="_blank"></a>
+    </span>
+      </div>
     </div>
 
-    <div id="News" class="tabcontent">
+
+    <button id='homeButton' class="tablink" onclick="openPage('Home', this)">Home</button>
+    <button class="tablink" onclick="openPage('News', this)" id="defaultOpen">My Projects</button>
+    <button class="tablink" onclick="openPage('Contact', this)">Find me here</button>
+    <button class="tablink" onclick="openPage('About', this)">Stuff I do for fun</button>
+
+
+    <div id="Home" class="tabcontent">
+      <h3>About me</h3>
+      <div class="container">
+      <div class="image">
+        <img src="matia.png" alt="Matia in Seattle!" width="400" height="auto">
+      </div>
+      <div class="text">
+        <p>Welcome to my website! I'm Matia. I'm currently a senior-year computer science student at Western University in Canada and I'm looking for an internship.  </p>
+      </div>
+    </div>
+    </div>
+
+
+
+    <div id="My Projects" class="tabcontent">
       <h3>News</h3>
       <p>Some news this fine day!</p> 
     </div>
 
-    <div id="Contact" class="tabcontent">
+    <div id="Find me here" class="tabcontent">
       <h3>Contact</h3>
       <p>Get in touch, or swing by for a cup of coffee.</p>
     </div>
 
-    <div id="About" class="tabcontent">
+    <div id="Stuff I do for fun" class="tabcontent">
       <h3>About</h3>
       <p>Who we are and what we do.</p>
     </div>
